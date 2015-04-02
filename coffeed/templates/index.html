@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -5,7 +6,7 @@
 
 		<title>Coffeed</title>
 	
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="{% static "css/style.css" %}">
 	</head>
 
 	<body>
@@ -21,11 +22,11 @@
 			<p>Email us now for a PDF of the Top 10 Coffee Shops in NYC: <a mailto:"hello@getcoffeed.com">hello@getcoffeed.com</a></p>
 
 			<a href="https://twitter.com/getcoffeed" target="_blank">
-				<img src="images/twitter.png" alt="Twitter">
+				<img src="{% static "images/twitter.png" %}" alt="Twitter">
 			</a>
 
 			<a href="https://www.facebook.com/getcoffeed" target="_blank">
-				<img src="images/facebook.png" alt="Facebook">
+				<img src="{% static "images/facebook.png" %}" alt="Facebook">
 			</a>
 			
 			<!-- END HERE --> 
